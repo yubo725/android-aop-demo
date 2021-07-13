@@ -1,0 +1,6 @@
+com/test/plugin/utils/InjectUtil.java
+ com.test.plugin.utils.InjectUtil
+com/test/plugin/MyTransform.java
+ com.test.plugin.MyTransform
+com/test/plugin/MyPlugin.java
+ com.test.plugin.MyPlugin
