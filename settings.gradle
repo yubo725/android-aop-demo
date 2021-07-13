@@ -1,0 +1,4 @@
+rootProject.name = "AopDemo"
+include ':app'
+include ':annotation'
+include ':calculator'
