@@ -1,0 +1,37 @@
+apply plugin: 'java-library'
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+repositories {
+    google()
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url '/Users/yubo/AndroidStudioProjects/AopDemo/annotation/repo'
+    }
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:4.2.2'
+    // javassist.jar文件可以在文末的源码中找到
+    implementation files('libs/javassist.jar')
+    implementation 'com.example.annotation:annotation:1.0.0'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
